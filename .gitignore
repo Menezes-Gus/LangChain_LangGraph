@@ -1,0 +1,96 @@
+# ------------------------------
+# 1. Arquivos sensíveis
+# ------------------------------
+.env
+.env.*
+*.env
+secrets.json
+config.json
+credentials.json
+*.key
+*.pem
+*.p12
+*.token
+
+# LangChain cache & outputs
+.cache/
+.cache/*
+
+# ------------------------------
+# 2. Jupyter Notebooks
+# ------------------------------
+.ipynb_checkpoints
+*.ipynb_editable
+# Para evitar grande parte dos outputs gigantes:
+*.nbconvert.ipynb
+
+# Se quiser remover também os outputs de imagem gerados nos notebooks:
+**/images/
+**/*.png
+**/*.jpg
+**/*.jpeg
+
+# ------------------------------
+# 3. Arquivos temporários
+# ------------------------------
+*.log
+*.tmp
+*.temp
+*~
+*.bak
+*.swp
+*.swm
+.DS_Store
+
+# ------------------------------
+# 4. Python
+# ------------------------------
+
+# Compiled
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+
+# Build
+build/
+dist/
+*.egg
+*.egg-info/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+.ENV/
+
+# Pip-tools / installs
+pip-wheel-metadata/
+pip-selfcheck.json
+
+# ------------------------------
+# 5. VSCode / IDEs
+# ------------------------------
+.vscode/
+.idea/
+*.code-workspace
+
+# ------------------------------
+# 6. Dados / Modelos pesados
+# ------------------------------
+data/
+datasets/
+*.parquet
+*.csv
+*.tsv
+*.jsonl
+**/outputs/
+**/results/
+models/
+model_weights/
+checkpoints/
+hf_cache/
+transformers_cache/
